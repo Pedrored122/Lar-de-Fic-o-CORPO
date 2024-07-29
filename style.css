@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+body {
+    background-color: rgba(6, 9, 26, 0);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    padding: 0 20px;
+}
+
+header {
+    border-bottom: 4px solid rgb(8, 5, 5);
+    padding: 24px 0;
+    margin-bottom: 36px;
+    background-color: #58807e;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.menu ul li:hover {
+    border-top: 2px solid white;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+form input {
+    padding: 5px;
+}
+
+form button {
+    padding: 5px 10px;
+}
+
+#sobre {
+    margin-bottom: 36px;
+}
+
+#sobre h2,
+#ofertas h2,
+#livros h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#sobre article {
+    display: flex;
+    gap: 16px;
+}
+
+#sobre img {
+    max-width: 320px;
+    width: 100%;
+}
+
+#ofertas {
+    margin-bottom: 36px;
+}
+
+#ofertas img,
+#livros img {
+    margin-bottom: 10px;
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.noticia img {
+    max-width: 100%;
+}
+
+.noticia h3 {
+    font-size: 16px;
+}
+
+.noticias-l {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.bt-adicionar {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: rgb(87, 122, 87);
+    color: #fff;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+footer {
+    padding: 50px;
+    background-color: #58807e;
+    margin-top: 36px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    header .container {
+        display: block;
+    }
+
+    .menu ul {
+        padding: 20px 0;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: black;
+    }
+
+    form {
+        display: block;
+    }
+
+    #sobre article {
+        display: block;
+    }
+
+    #sobre img,
+    #ofertas img,
+    #livros img {
+        max-width: 320px;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #ofertas article,
+    #livros article {
+        margin-bottom: 20px;
+    }
+
+    .noticias {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .container {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu ul li {
+        font-size: 24px;
+    }
+
+    form input {
+        margin-left: 50px;
+        font-size: 16px;
+    }
+
+    .container h3 {
+        font-size: 20px;
+    }
+
+    .noticias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
